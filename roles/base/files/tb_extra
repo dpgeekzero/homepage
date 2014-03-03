@@ -1,0 +1,2 @@
+SigLevel = Optional TrustAll
+Server = ftp://pgvlab.us.dell.com/Projects/testbench/tb_extra/$arch

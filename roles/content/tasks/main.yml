@@ -1,0 +1,3 @@
+
+- name: Copy content
+  git: repo={{ project_repo }} dest=/srv/http/simple/ force=yes

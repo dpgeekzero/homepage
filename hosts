@@ -1,0 +1,2 @@
+[servers]
+www.geekzero.net ansible_ssh_user=root

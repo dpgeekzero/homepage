@@ -1,0 +1,8 @@
+
+- name: Install nginx
+  pacman: name=nginx state=installed
+  when: ansible_distribution == 'Archlinux'
+
+- name: Copy nginx configuration for testbench
+  copy: src=nginx/ dest=/etc/nginx/
+  notify: restart nginx

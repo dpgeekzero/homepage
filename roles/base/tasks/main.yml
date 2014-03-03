@@ -1,0 +1,12 @@
+
+- name: install additional software
+  action: pacman name={{ item }} state=installed
+  with_items:
+    - vim
+    - git
+    - python
+    - python-virtualenv
+  when: ansible_distribution == 'Archlinux'
+
+- name: install root files
+  copy: src=vimrc dest=/root/.vimrc mode=600
